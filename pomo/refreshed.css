@@ -1,0 +1,72 @@
+* {
+    font-family: Calibri;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    background-color: #457ab7;
+}
+
+.logo_container {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.logo {
+    color: white;
+    padding: 10px 20px 0px 20px;
+    margin: 0px;
+    font-size: 50px;
+}
+
+.background {
+    background-color: #457ab7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_header {
+    font-size: 130px;
+    text-shadow: grey; 
+    color: white;
+    letter-spacing: 5px;
+    padding: 0px;
+    margin: 60px 0px 0px 0px;
+}
+
+.refreshed_pomo {
+    height: 500px;
+    width: 600px;
+}
+
+.break_buttons {
+    justify-content: space-around;
+    padding: 50px 0px 0px 0px;
+}
+
+.home_button {
+    text-decoration: none;
+    background-color: #f17f67;
+    border: 3px solid white;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 15px 45px 15px 45px;
+    font-size: 30px;
+    color: white;
+}
+
+.home_button:hover {
+    animation: 0s change-color forwards;
+}
+
+@keyframes change-color {
+    from {background-color: #f17f67}
+    to {background-color: #ee5e41}
+}
