@@ -44,88 +44,34 @@ html {
 .line {
     background-color: white;
     border-radius: 5px;
-    height: 10px;
+    height: 20px;
     width: 700px;
-    margin-bottom: 20px;
-}
-
-.sleeping_pomo {
-    height: 360px;
-    width: 480px;
-}
-
-.end_button {
-    justify-content: space-around;
-    padding: 50px 0px 0px 0px;
-}
-
-.end_break {
-    text-decoration: none;
-    background-color: #f17f67;
-    border: 3px solid white;
-    border-radius: 7px;
+    padding: 3px;
     margin: 20px;
-    padding: 15px 45px 15px 45px;
-    font-size: 30px;
-    color: white;
 }
 
-.end_break:hover {
-    animation: 0s change-color forwards;
-}
-
-@keyframes change-color {
-    from {background-color: #f17f67}
-    to {background-color: #ee5e41}
-}* {
-    font-family: Calibri;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
-
-html {
-    background-color: #457ab7;
-}
-
-.logo_container {
-    margin: 10px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.logo {
-    color: white;
-    padding: 10px 20px 0px 20px;
-    margin: 0px;
-    font-size: 50px;
-}
-
-.background {
-    background-color: #457ab7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.main_header {
-    font-size: 130px;
-    text-shadow: grey; 
-    color: white;
-    letter-spacing: 5px;
-    padding: 0px;
-    margin: 60px 0px 0px 0px;
-}
-
-.line {
-    background-color: white;
+.progress {
+    display: block;
+    height: 100%;
     border-radius: 5px;
-    height: 10px;
-    width: 700px;
-    margin-bottom: 20px;
+    background-color: rgb(43,194,83);
+    background-image: linear-gradient(
+        center bottom,
+        rgb(43,194,83) 37%,
+        rgb(84,240,84) 69%
+    );
+    box-shadow: 
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    animation: 600s fill-progress forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes fill-progress {
+    from {width: 0%}
+    to {width: 100%}
 }
 
 .sleeping_pomo {
