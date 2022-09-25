@@ -1,145 +1,469 @@
 * {
-    font-family: Calibri;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+  font-family: Calibri;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
-    background-color: #457ab7;
+  background-color: #457ab7;
 }
 
 .logo_container {
-    margin: 10px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  margin: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .logo {
-    color: white;
-    padding: 10px 20px 0px 20px;
-    margin: 0px;
-    font-size: 50px;
+  color: white;
+  padding: 10px 20px 0px 20px;
+  margin: 0px;
+  font-size: 50px;
 }
 
 .content_container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px 50px 10px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 50px 10px 50px;
 }
 
 .task_bank {
-    height: 700px;
-    width: 400px;
-    margin-right: 30px;
-    background-color: #f17f67;
-    border: 3px solid white; 
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 700px;
+  width: 400px;
+  margin-right: 30px;
+  background-color: #f17f67;
+  border: 3px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .task_bank_title {
-    color: white;
-    font-size: 40px;
-    padding: 20px 0px 10px 0px;
+  color: white;
+  font-size: 40px;
+  padding: 20px 0px 10px 0px;
 }
 
 .timer_functions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timer_heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3px;
 }
 
 .time_left {
-    font-size: 100px;
-    color: white;
-    letter-spacing: 2px;
-    padding: 10px;
+  font-size: 100px;
+  color: white;
+  letter-spacing: 2px;
+  padding: 10px;
 }
 
 .line {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    height: 20px;
-    width: 700px;
-    padding: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 20px;
+  width: 700px;
+  padding: 3px;
 }
 
 .progress {
-    display: block;
-    height: 100%;
-    border-radius: 5px;
-    background-color: rgb(43,194,83);
-    background-image: linear-gradient(
-        center bottom,
-        rgb(43,194,83) 37%,
-        rgb(84,240,84) 69%
-    );
-    box-shadow: 
-        inset 0 2px 9px  rgba(255,255,255,0.3),
-        inset 0 -2px 6px rgba(0,0,0,0.4);
-    position: relative;
-    overflow: hidden;
-    animation: 1500s fill-progress forwards;
-    animation-timing-function: linear;
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(43, 194, 83);
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43, 194, 83) 37%,
+    rgb(84, 240, 84) 69%
+  );
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  animation: 1500s fill-progress forwards;
+  animation-timing-function: linear;
 }
 
 @keyframes fill-progress {
-    from {width: 0%}
-    to {width: 100%}
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-
 .pomo_studying {
-    height: 500px;
-    width: 500px;
+  height: 500px;
+  width: 500px;
 }
 
 .timer_buttons {
-    width: 700px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-    margin: 10px;
+  width: 700px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px;
 }
 
 .restart_button {
-    border-radius: 15px;
-    border: 3px solid white;
-    background-color: #f17f67;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    width: 250px;
-    height: 75px;
-    padding: 10px; 
+  border-radius: 15px;
+  border: 3px solid white;
+  background-color: #f17f67;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  height: 75px;
+  padding: 10px;
 }
 
 .restart_button:hover {
-    animation: 0s change-color forwards;
+  animation: 0s change-color forwards;
 }
 
 @keyframes change-color {
-    from {background-color: #f17f67}
-    to {background-color: #ee5e41}
+  from {
+    background-color: #f17f67;
+  }
+  to {
+    background-color: #ee5e41;
+  }
 }
+
+.pethouse {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menubar {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333;
+  height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow-y: auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: "✓";
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.delete-todo {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #333;
+}
+
+.pethouse {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menubar {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333;
+  height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow-y: auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: "✓";
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.delete-todo {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #333;
+}
+
+ul {
+    color: white;
+}
+/* 
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.header {
+    background-color: #f44336;
+    color: white;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+}
+
+.close:hover {
+    background-color: red;
+    color: white;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+} */

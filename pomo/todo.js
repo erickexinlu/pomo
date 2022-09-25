@@ -7,7 +7,7 @@ let todoItems = [];
 
 function renderTodo(todo) {
     //JSON
-    localStorage.setItem('todoItemsRef', JSON.stringify(todoItems));
+    localStorage.setItem('todoItemsStored', JSON.stringify(todoItems));
 
     const list = document.querySelector('.js-todo-list');
     const item = document.querySelector(`[data-key='${todo.id}']`);
@@ -70,7 +70,7 @@ list.addEventListener('click', event => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-    const ref = localStorage.getItem('todoItemsRef');
+    const ref = localStorage.getItem('todoItemsStored');
     if (ref) {
       todoItems = JSON.parse(ref);
       todoItems.forEach(t => {
