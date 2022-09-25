@@ -65,6 +65,7 @@ html {
     justify-content: space-around;
     align-items: center;
     padding: 20px 20px 30px 20px;
+    margin-top: 50px;
 }
 
 .timer_heading {
